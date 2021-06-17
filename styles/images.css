@@ -1,0 +1,4 @@
+img.icon {
+	background: var(--color-bg);
+	max-height: 6rem;
+}

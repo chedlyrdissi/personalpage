@@ -1,0 +1,44 @@
+:root {
+	--color-text: #B20000;
+	--color-bg: black;
+
+	--color-text-on-white: #540000;
+
+	--color-text-candidate: #870000;
+	--color-text-candidate: #660000;
+	--color-text-candidate: #CA0000;
+	--color-text-candidate: #920000;
+}
+
+body {
+	background: var(--color-bg);
+}
+
+body, a, input, input::placeholder {
+	color: var(--color-text) !important;
+}
+
+button, .form-control {
+	border: 2px solid var(--color-text) !important;
+	color: var(--color-text) !important;
+}
+
+button:focus, .form-control:focus {
+	box-shadow: 0 0 5px 0.05rem !important;
+}
+
+.navbar-nav {
+	flex-direction: row;
+}
+
+.nav-item {
+    margin: 0 1em;
+}
+
+.dropdown-menu {
+	position: absolute !important;
+}
+
+.active {
+	font-weight: bolder;
+}
