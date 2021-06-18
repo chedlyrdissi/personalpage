@@ -1,0 +1,6 @@
+.accordion-button {
+    color: var(--color-bg) !important;
+    background-color: var(--color-text) !important;
+	font-weight: bolder;
+	font-size: x-large;
+}

@@ -26,19 +26,3 @@ button, .form-control {
 button:focus, .form-control:focus {
 	box-shadow: 0 0 5px 0.05rem !important;
 }
-
-.navbar-nav {
-	flex-direction: row;
-}
-
-.nav-item {
-    margin: 0 1em;
-}
-
-.dropdown-menu {
-	position: absolute !important;
-}
-
-.active {
-	font-weight: bolder;
-}
