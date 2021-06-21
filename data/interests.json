@@ -1,0 +1,53 @@
+[
+	{
+		"label": "violin",
+		"level": "beginner",
+		"description": null,
+		"additional": [
+			{
+				"label": "Play decent music",
+				"notes": null 
+			}
+		]
+	},
+	{
+		"label": "tennis",
+		"level": "beginner",
+		"description": null,
+		"additional": []
+	},
+	{
+		"label": "Cyber Security",
+		"level": "beginner",
+		"description": "Red Team",
+		"additional": [
+			{
+				"label": "OSCP certificate",
+				"notes": null 
+			},
+			{
+				"label": "Pawn HTB boxes",
+				"notes": null 
+			},
+			{
+				"label": "Hack The Box",
+				"notes": "Username: chadow2000",
+				"url": "https://app.hackthebox.eu" 
+			},
+			{
+				"label": "Try Hack Me",
+				"notes": "Username: chadow2000",
+				"url": "https://tryhackme.com" 
+			},
+			{
+				"label": "Coding for Veterans CTF",
+				"notes": "Username: chadow2000",
+				"url": "https://tryhackme.com",
+				"description": "CTF",
+				"start": "20/03/2021",
+				"finish": "20/03/2021",
+				"notes": "Team: BitsPlease"
+			}
+		]
+	}
+]
