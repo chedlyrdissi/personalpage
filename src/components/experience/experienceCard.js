@@ -40,7 +40,7 @@ class ExperienceCardComponent extends Component {
           </Card.ImgOverlay>
         </div>
         <Card.Footer>
-          <Card.Link href="#" onClick={this.toggleOpen}>
+          <Card.Link variant="none" onClick={this.toggleOpen}>
             {open? "Less": "More"} <FontAwesomeIcon icon={open? faChevronUp: faChevronDown}/>
           </Card.Link>
         </Card.Footer>

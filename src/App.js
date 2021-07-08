@@ -5,7 +5,6 @@ import ProjectsComponent from './components/projects/projects';
 import ExperienceComponent from './components/experience/experience';
 import { Container } from 'react-bootstrap';
 import {
-  // BrowserRouter as Router,
   HashRouter as Router,
   Switch,
   Route
@@ -18,9 +17,9 @@ function App() {
 
   return (
     <div className="App">
-      <HeaderComponent></HeaderComponent>
-      <Container>
-        <Router basename="/personalpage/">
+      <Router basename="/">
+        <HeaderComponent></HeaderComponent>
+        <Container>
           <Switch>
             <Route path="/" exact component={Home} />
             <Route path="/interests" component={InterestsComponent} />
@@ -30,8 +29,8 @@ function App() {
             <Route path="/projects/contracts" component={ProjectsComponent} />
             <Route path="*" component={NoMatch} />
           </Switch>
-  	    </Router>
-      </Container>
+        </Container>
+	    </Router>
     </div>
   );
 }

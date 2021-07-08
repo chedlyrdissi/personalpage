@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from "react-router-dom";
 import { Navbar, Nav, Dropdown } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
@@ -12,7 +13,7 @@ class HeaderComponent extends Component {
 	render() {
 		return (
 			<Navbar expand="lg">
-			  <Navbar.Brand href="/personalpage/" className="logo-grid text-center">
+			  <Navbar.Brand as={Link} to="/" className="logo-grid text-center">
 			  	<img className="icon" src={process.env.PUBLIC_URL + "/wings.png"} alt="logo"/>
 					Chedli Redissi
 			  </Navbar.Brand>
@@ -22,13 +23,13 @@ class HeaderComponent extends Component {
 			  <Navbar.Collapse id="basic-navbar-nav">
 			    <Nav className="mr-auto nav-bar">
 			      <Nav.Item>
-					    <Nav.Link href="/personalpage/">Home</Nav.Link>
+					    <Nav.Link as={Link} to="/">Home</Nav.Link>
 					  </Nav.Item>
 					  <Nav.Item>
-					    <Nav.Link href="/personalpage/interests">Interests</Nav.Link>
+					    <Nav.Link as={Link} to="/interests">Interests</Nav.Link>
 					  </Nav.Item>
 					  <Nav.Item>
-					    <Nav.Link href="/personalpage/experience">Experience</Nav.Link>
+					    <Nav.Link as={Link} to="/experience">Experience</Nav.Link>
 					  </Nav.Item>
 					  <Nav.Item>
 					    <Dropdown>
@@ -37,10 +38,10 @@ class HeaderComponent extends Component {
 							  </Dropdown.Toggle>
 
 							  <Dropdown.Menu className="dropdown-menu">
-							    <Dropdown.Item href="/personalpage/projects/side" as="a">Side</Dropdown.Item>
-							    <Dropdown.Item href="/personalpage/projects/school" as="a">School</Dropdown.Item>
+							    <Dropdown.Item as={Link} to="/projects/side">Side</Dropdown.Item>
+							    <Dropdown.Item as={Link} to="/projects/school">School</Dropdown.Item>
 							    <Dropdown.Divider/>
-							    <Dropdown.Item href="/personalpage/projects/contracts" as="a">Contracts</Dropdown.Item>
+							    <Dropdown.Item as={Link} to="/projects/contracts">Contracts</Dropdown.Item>
 							  </Dropdown.Menu>
 							</Dropdown>
 					  </Nav.Item>
