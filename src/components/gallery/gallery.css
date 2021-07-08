@@ -1,0 +1,8 @@
+.carousel-inner {
+	height: 100%;
+}
+
+.carousel-caption {
+	color: var(--color-text);
+	text-shadow: 0 1px var(--color-bg), 0 -1px var(--color-bg), -1px 0 var(--color-bg), 1px 0 var(--color-bg);
+}

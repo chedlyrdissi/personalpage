@@ -1,0 +1,13 @@
+.logo-grid {
+	display: grid;
+}
+
+.nav-bar {
+	align-items: center;
+	font-size: x-large !important;
+	align-self: center;
+}
+
+.dropdown-menu, .dropdown-item, .dropdown-item:active {
+  background: var(--color-bg) !important;
+}

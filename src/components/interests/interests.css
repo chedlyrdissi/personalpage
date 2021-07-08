@@ -1,0 +1,33 @@
+.card-header, .card-header a {
+	background-color: var(--color-text) !important;
+	color: var(--color-bg) !important;
+}
+
+.card-header a {
+	font-weight: 800;
+}
+
+.accordion-body, .accordion-body a {
+	background-color: var(--color-bg) !important;
+	color: var(--color-text) !important;
+}
+
+.card {
+	border: none;
+}
+
+table {
+	color: var(--color-text) !important;
+}
+
+.table td, .table th {
+	border: none;
+}
+
+.table thead th {
+	border-bottom: 2px solid var(--color-text);
+}
+
+.dropdown-divider {
+	border-top: 1px solid var(--color-text);
+}

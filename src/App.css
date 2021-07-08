@@ -1,0 +1,13 @@
+button, .form-control {
+  border: 2px solid var(--color-text) !important;
+  color: var(--color-text) !important;
+}
+
+button:focus, .form-control:focus {
+  box-shadow: 0 0 5px 0.05rem !important;
+}
+
+img.icon {
+  background: var(--color-bg);
+  max-height: 6rem;
+}
