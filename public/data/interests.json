@@ -5,7 +5,8 @@
 		"description": null,
 		"additional": [
 			{
-				"label": "Play decent music",
+				"key": "Objective",
+				"value": "Play decent music",
 				"notes": null 
 			}
 		]
@@ -14,7 +15,13 @@
 		"label": "tennis",
 		"level": "beginner",
 		"description": null,
-		"additional": []
+		"additional": [
+			{
+				"key": "Objective",
+				"value": "Have fun",
+				"notes": null 
+			}
+		]
 	},
 	{
 		"label": "Cyber Security",
@@ -22,25 +29,30 @@
 		"description": "Red Team",
 		"additional": [
 			{
-				"label": "OSCP certificate",
+				"key": "Objective",
+				"value": "OSCP certificate",
 				"notes": null 
 			},
 			{
-				"label": "Pawn HTB boxes",
+				"key": "Objective",
+				"value": "Pawn HTB boxes",
 				"notes": null 
 			},
 			{
-				"label": "Hack The Box",
+				"key": "Platform",
+				"value": "Hack The Box",
 				"notes": "Username: chadow2000",
 				"url": "https://app.hackthebox.eu" 
 			},
 			{
-				"label": "Try Hack Me",
+				"key": "Platform",
+				"value": "Try Hack Me",
 				"notes": "Username: chadow2000",
 				"url": "https://tryhackme.com" 
 			},
 			{
-				"label": "Coding for Veterans CTF",
+				"key": "CTF",
+				"value": "Coding for Veterans CTF",
 				"notes": "Username: chadow2000",
 				"url": "https://tryhackme.com",
 				"description": "CTF",

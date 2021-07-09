@@ -30,7 +30,8 @@ class InterestsComponent extends Component {
 	renderInterestAdditionalItem = (item, i) =>
 		<tr key={i+1}>
 			<th scope="row">{i+1}</th>
-			<td>{item.label}</td>
+			<td>{item.key}</td>
+			<td>{item.value}</td>
 			<td>{item.note || ''}</td>
 		</tr>
 
@@ -39,7 +40,8 @@ class InterestsComponent extends Component {
 			<thead>
 				<tr>
 					<th scope="col">#</th>
-					<th scope="col">label</th>
+					<th scope="col"></th>
+					<th scope="col"></th>
 					<th scope="col">note</th>
 				</tr>
 			</thead>
