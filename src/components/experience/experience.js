@@ -31,7 +31,7 @@ class ExperienceComponent extends Component {
       )
     }
     return (
-      <CardColumns>
+      <CardColumns style={{ widows: 2}}>
         {this.state.experience.map(this.renderExperienceCard)}
       </CardColumns>
     )

@@ -1,11 +1,8 @@
 .shadow-card {
 	border: 2px solid var(--color-text);
 	background-color: transparent;
-	color: var(--color-text);
-	text-shadow: 0 1px var(--color-bg), 0 -1px var(--color-bg), -1px 0 var(--color-bg), 1px 0 var(--color-bg),
-				 0 2px var(--color-bg), 0 -2px var(--color-bg), -2px 0 var(--color-bg), 2px 0 var(--color-bg),
-				 0 3px var(--color-bg), 0 -3px var(--color-bg), -3px 0 var(--color-bg), 3px 0 var(--color-bg),
-				 0 4px var(--color-bg), 0 -4px var(--color-bg), -4px 0 var(--color-bg), 4px 0 var(--color-bg);
+	color: var(--color-text-light);
+	text-shadow: 0 3px 5px var(--color-bg), 0 -3px 5px var(--color-bg), -3px 0 5px var(--color-bg), 3px 0 5px var(--color-bg);
 }
 
 .card-footer {

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Card } from 'react-bootstrap';
+import { Card, Button } from 'react-bootstrap';
 import GalleryComponent from '../gallery/gallery'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronUp, faChevronDown } from '@fortawesome/free-solid-svg-icons';
@@ -20,7 +20,7 @@ class ExperienceCardComponent extends Component {
     </Card.Text>
 
   render() {
-    const { image, label, organization, images, note } = this.props;
+    const { image, label, description, organization, images, note } = this.props;
     const { open } = this.state;
 
     return (
@@ -40,14 +40,15 @@ class ExperienceCardComponent extends Component {
           </Card.ImgOverlay>
         </div>
         <Card.Footer>
-          <Card.Link variant="none" onClick={this.toggleOpen}>
+          <Button className="w-100" variant="none" onClick={this.toggleOpen}>
             {open? "Less": "More"} <FontAwesomeIcon icon={open? faChevronUp: faChevronDown}/>
-          </Card.Link>
+          </Button>
+          <Card.Body className={open? "": "d-none"}>
+            { description?.split('\n').map(this.renderNote) }
+            <GalleryComponent className="img-container" images={images}/>
+            { note?.split('\n').map(this.renderNote) }
+          </Card.Body>
         </Card.Footer>
-        <Card.Body className={open? "": "d-none"}>
-          { note?.split('\n').map(this.renderNote) }
-          <GalleryComponent className="img-container" images={images}/>
-        </Card.Body>
       </Card>
     )
   }

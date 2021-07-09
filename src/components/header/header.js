@@ -14,7 +14,7 @@ class HeaderComponent extends Component {
 		return (
 			<Navbar expand="lg">
 			  <Navbar.Brand as={Link} to="/" className="logo-grid text-center">
-			  	<img className="icon" src={process.env.PUBLIC_URL + "/wings.png"} alt="logo"/>
+			  	<img className="icon" src={process.env.PUBLIC_URL + "/images/wings.png"} alt="logo"/>
 					Chedli Redissi
 			  </Navbar.Brand>
 			  <Navbar.Toggle aria-controls="basic-navbar-nav">
