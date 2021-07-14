@@ -9,20 +9,12 @@
 				"image": "https://logos-world.net/wp-content/uploads/2020/09/Nokia-Logo.png"
 			},
 			{
-				"image": "personalpage/images/blackduck_logo.png",
+				"image": "images/blackduck_logo.png",
 				"label": "BlackDuck"
 			},
 			{
-				"image": "personalpage/images/anchore_logo.png",
+				"image": "images/anchore_logo.png",
 				"label": "Anchore"
-			},
-			{
-				"image": "",
-				"label": "Talko"
-			},
-			{
-				"image": "",
-				"label": "VAMS"
 			}
 		],
 		"note": ""
@@ -34,11 +26,11 @@
 		"image": "https://logos-world.net/wp-content/uploads/2020/09/Nokia-Logo.png",
 		"images": [
 			{
-				"image": "personalpage/images/openstack_logo.png",
+				"image": "images/openstack_logo.png",
 				"label": "OpenStack"
 			},
 			{
-				"image": "personalpage/images/red_hat_logo.jpg",
+				"image": "images/red_hat_logo.jpg",
 				"label": "Linux Red Hat"
 			}
 		],
@@ -48,7 +40,7 @@
 		"label": "FullStack Software Developper",
 		"description": "Worked as a fullstack devepper as part of a scrum team, in an agile environmnet.\nThis was my first time working in web development.\nTechnologies:\nhtml\ncss\njs\nAngular\nJSP\nspring boot\nwildfly\ngradle\nliquibase\nmercurial\nTasks:\nFixing bugs\nimplemented new features\nmodified the architecture by moving components between modules\nimplemented a showbook to showcase the new behaviour of modified components.",
 		"organization": "Saba Softwares",
-		"image": "personalpage/images/saba_logo.png",
+		"image": "images/saba_logo.png",
 		"images": [],
 		"note": ""
 	},
@@ -56,7 +48,7 @@
 		"label": "Student Mentor",
 		"description": "Worked as part of uOttawa's Engineering Mentoring Center.\nTasks:\nFacilitated Study groups\nDirected workshops\nHelped students during individual consultations.\nCourses facilitated:\nObject Oriented Programming with java.",
 		"organization": "uOttawa Engineering Mentoring Center",
-		"image": "personalpage/images/mentoring_center_logo.jpg",
+		"image": "images/mentoring_center_logo.jpg",
 		"images": [],
 		"note": ""
 	},
@@ -64,7 +56,7 @@
 		"label": "uPass Distribution Clerk",
 		"description": "",
 		"organization": "uOttawa Card Services",
-		"image": "personalpage/images/uottawa_logo.png",
+		"image": "images/uottawa_logo.png",
 		"images": [],
 		"note": ""
 	},
@@ -72,7 +64,7 @@
 		"label": "Note Taker",
 		"description": "",
 		"organization": "uOttawa",
-		"image": "personalpage/images/uottawa_logo.png",
+		"image": "images/uottawa_logo.png",
 		"images": [],
 		"note": ""
 	},
@@ -80,7 +72,7 @@
 		"label": "Outfieler",
 		"description": "",
 		"organization": "Rona Entrepot",
-		"image": "personalpage/images/rona_logo.jpg",
+		"image": "images/rona_logo.jpg",
 		"images": [],
 		"note": ""
 	}
