@@ -1,11 +1,31 @@
 import React, { Component } from 'react';
 import { Container, Spinner } from 'react-bootstrap';
-import ProjectComponent from './project.js';
+import ProjectPanelComponent from './projectpanel/projectpanel';
 
 
 class ProjectsComponent extends Component {
 
-	renderProject = (project, i) => <ProjectComponent key={i} project={project} />
+	state = {
+		open: false,
+		selectedProject: null
+	}
+
+	selectProject = (project) => {
+		this.setState({ open: true, selectedProject: project })
+	}
+
+	toggleOpen = () => {
+		const { open } = this.state;
+		this.setState({ open: !open })
+	}
+
+	renderProject = (project, i) =>
+		<li
+			key={i}
+			onClick={() => this.selectProject(project)}
+		>
+			{project.name}
+		</li>
 
 	renderLoading = () =>
 		<Spinner animation="border" role="status">
@@ -14,12 +34,21 @@ class ProjectsComponent extends Component {
 
 	render() {
 		const { projects } = this.props;
+		const { open, selectedProject } = this.state;
+
 		return (
-			<Container>
+			<Container fluid className="position-relative h-100">
 				{projects === null?
 					this.renderLoading():
-					projects.map(this.renderProject)
+					<ul>
+						{projects.map(this.renderProject)}
+					</ul>
 				}
+				<ProjectPanelComponent
+					open={open}
+					project={selectedProject}
+					openToggled={this.toggleOpen}
+				/>
 			</Container>
 		)
 	}

@@ -18,10 +18,10 @@ import {
 function App() {
 
   return (
-    <div className="App">
+    <div className="h-100">
       <Router basename="/">
         <HeaderComponent></HeaderComponent>
-        <Container>
+        <Container className="h-100">
           <Switch>
             <Route path="/" exact component={HomeComponent} />
             <Route path="/interests" component={InterestsComponent} />

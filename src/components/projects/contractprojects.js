@@ -4,7 +4,10 @@ import ProjectsComponent from './projects';
 class ContractProjectsComponent extends Component {
 	constructor(props) {
 		super(props);
-		this.state = { projects: null };
+		this.state = {
+			projects: null,
+			selectedProject: null
+		};
 		fetch(`${process.env.PUBLIC_URL}/data/contracts.json`)
 			.then(data => data.json())
 			.then(projects => {
