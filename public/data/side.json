@@ -56,6 +56,20 @@
 		]
 	},
 	{
+		"name": "Belotte",
+		"url": "https://github.com/chedlyrdissi/Belote",
+		"urlSource": "github",
+		"started": "18/04/2020",
+		"finished": "05/05/2020",
+		"status": "Dumped",
+		"technologies": [
+			"java",
+			"android",
+			"xml",
+			"firebase"
+		]
+	},
+	{
 		"name": "Harpocrates",
 		"url": "https://github.com/chedlyrdissi/Harpocrates",
 		"urlSource": "github",
