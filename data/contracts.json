@@ -1,1 +1,22 @@
-[{"label": "contracts"}]
+[
+	{
+		"name": "Seis-p",
+		"description": "Simulation module for UNDP",
+		"url": "",
+		"started": "01/01/2021",
+		"finished": "29/05/2021",
+		"status": "Closed",
+		"technologies": [
+			"python",
+			"python:dataframe",
+			"python:numpy",
+			"python:matplotlib",
+			"python:scipy",
+			"python:XlsxWriter",
+			"python:argparse",
+			"python:tkinter",
+			"python:PyInquirer",
+			"python:pyfiglet"
+		]
+	}
+]
