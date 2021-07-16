@@ -11,7 +11,7 @@
 }
 
 .panel-toggle {
-	left: calc(-var(--icon-size)/2);
+	left: - calc(var(--icon-size)/2);
 	top: calc(50% - calc(var(--icon-size)/2));
 	width: var(--icon-size);
 	height: var(--icon-size);
