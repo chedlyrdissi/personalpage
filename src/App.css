@@ -16,6 +16,5 @@ img.icon {
   bottom: 0;
   width: 100%;
   background: var(--color-bg-primary);
-  /*height: 30px;*/
   padding-left: 15px;
 }

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Accordion, Card, Row, Col } from 'react-bootstrap'
+import { Row, Col } from 'react-bootstrap'
 import CustomCard from '../card/card';
 import './interests.css';
 
@@ -60,28 +60,13 @@ class InterestsComponent extends Component {
 			</tbody>
 		</table>
 
-	renderInterestItem = (interest, i) =>
-		<Card key={i+1}>
-	    <Card.Header>
-	      <Accordion.Toggle as="a" eventKey={i+1}>
-	        {interest.label} {interest.level? `(${interest.level})`: ""}
-	      </Accordion.Toggle>
-	    </Card.Header>
-	    <Accordion.Collapse eventKey={i+1}>
-	      <Card.Body className="accordion-body">
-	      	{this.renderDescription(interest)}
-	      	{interest.additional.length > 0 && this.renderInterestAdditional(interest.additional)}
-	      </Card.Body>
-	    </Accordion.Collapse>
-	  </Card>
-
 	render() {
 		if(this.state.interests == null) {
 			return this.renderLoading();
 		}
 
 		return (
-			<Row xs={1} md={2} className="g-4">
+			<Row xs={1} md={2} lg={3} className="g-4">
 			  {this.state.interests.map(({label, level, additional}, i) =>
 			    <Col key={i+1} className="my-3">
             <CustomCard
@@ -95,11 +80,6 @@ class InterestsComponent extends Component {
 			  )}
 			</Row>
 		)
-		// return (
-		// 	<Accordion>
-		// 	  {this.state.interests.map(this.renderInterestItem)}
-		// 	</Accordion>
-		// )
 	}
 }
 

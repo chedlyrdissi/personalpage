@@ -35,7 +35,7 @@ class HeaderComponent extends Component {
     const { mobileView } = this.state;
 
 		return (
-			<Navbar expand="lg" className="header-container">
+			<Navbar expand="lg">
 			  <Navbar.Brand as={Link} to="/" className="logo-grid text-center">
 			  	<img className="icon" src={process.env.PUBLIC_URL + "/images/wings.png"} alt="logo"/>
 					Chedli Redissi
