@@ -1,7 +1,48 @@
 [
 	{
 		"label": "Software Security Engineer",
-		"description": "Worked mainly on a thirdparty tracker app.\nUsing python, python the request library, and various web apis, I registered projects into vulnerability scanning apps such as blackduck and anchore (for container vulnerabilty scanning).\nPulled boms.\nRegistered the third-party dependencies in Talko (an internal app for creating software certificates) and VAMS for monitoring the third-party dependencies.\nChallenges:\nThe main challenge I faced was the poor documentation on the internal apps. Because of the poor documentation, it took me a lot of trials and errors to get the app up and running.\nAnother challenge was the lack of naming convention: in talko, to register a dependency, we have to filter the list of available dependencies on talko to find its id, which was difficult due to the names not conforming to the same noms.\nI worked on updating React components for user-manager app.\nChallenges: understanding the way react-ag-grid worked (old and new version), and how the new nokia components worked.\nAnd lastly, the component rendering was a tricky part to handle. Afterall multiple components tried to rerender multiple times, causing a chain reaction. the easiest solution was to use flags and react hoocks such as the should rerender hook.",
+		"description": [
+			{
+				"type": "p",
+				"value": "Worked mainly on a thirdparty tracker app."
+			},
+			{
+				"type": "p",
+				"value": "Using python, python the request library, and various web apis, I registered projects into vulnerability scanning apps such as blackduck and anchore (for container vulnerabilty scanning)."
+			},
+			{
+				"type": "p",
+				"value": "Pulled boms."
+			},
+			{
+				"type": "p",
+				"value": "Registered the third-party dependencies in Talko (an internal app for creating software certificates) and VAMS for monitoring the third-party dependencies."
+			},
+			{
+				"type": "h5",
+				"value": "Challenges:"
+			},
+			{
+				"type": "p",
+				"value": "The main challenge I faced was the poor documentation on the internal apps. Because of the poor documentation, it took me a lot of trials and errors to get the app up and running."
+			},
+			{
+				"type": "p",
+				"value": "Another challenge was the lack of naming convention: in talko, to register a dependency, we have to filter the list of available dependencies on talko to find its id, which was difficult due to the names not conforming to the same noms."
+			},
+			{
+				"type": "p",
+				"value": "I worked on updating React components for user-manager app."
+			},
+			{
+				"type": "p",
+				"value": "Understanding the way react-ag-grid worked (old and new version), and how the new nokia components worked."
+			},
+			{
+				"type": "p",
+				"value": "And lastly, the component rendering was a tricky part to handle. Afterall multiple components tried to rerender multiple times, causing a chain reaction. the easiest solution was to use flags and react hoocks such as the should rerender hook."
+			}
+		],
 		"organization": "Nokia",
 		"image": "https://logos-world.net/wp-content/uploads/2020/09/Nokia-Logo.png",
 		"images": [
@@ -16,12 +57,31 @@
 				"image": "images/anchore_logo.png",
 				"label": "Anchore"
 			}
-		],
-		"note": ""
+		]
 	},
 	{
 		"label": "NSP Software Tester",
-		"description": "Created automated tests for the NSP platform using xml framework.\nWorked with:\nOpenStack\nRed Hat Linux.\nLearned about routers' system.",
+		"description": [
+			{
+				"type": "p",
+				"value": "Created automated tests for the NSP platform using xml framework."
+			},
+			{
+				"type": "h5",
+				"value": "Worked with:"
+			},
+			{
+				"type": "li",
+				"value": [
+					"OpenStack",
+					"Red Hat Linux"
+				]
+			},
+			{
+				"type": "p",
+				"value": "Learned about routers' system."
+			}
+		],
 		"organization": "Nokia",
 		"image": "https://logos-world.net/wp-content/uploads/2020/09/Nokia-Logo.png",
 		"images": [
@@ -33,47 +93,101 @@
 				"image": "images/red_hat_logo.jpg",
 				"label": "Linux Red Hat"
 			}
-		],
-		"note": ""
+		]
 	},
 	{
 		"label": "FullStack Software Developper",
-		"description": "Worked as a fullstack devepper as part of a scrum team, in an agile environmnet.\nThis was my first time working in web development.\nTechnologies:\nhtml\ncss\njs\nAngular\nJSP\nspring boot\nwildfly\ngradle\nliquibase\nmercurial\nTasks:\nFixing bugs\nimplemented new features\nmodified the architecture by moving components between modules\nimplemented a showbook to showcase the new behaviour of modified components.",
+		"description": [
+			{
+				"type": "p",
+				"value": "Worked as a fullstack devepper as part of a scrum team, in an agile environmnet."
+			},
+			{
+				"type": "p",
+				"value": "This was my first time working in web development."
+			},
+			{
+				"type": "h5",
+				"value": "Technologies:"
+			},
+			{
+				"type": "li",
+				"value": [
+					"html",
+					"css",
+					"js",
+					"Angular",
+					"JSP",
+					"spring boot",
+					"wildfly",
+					"gradle",
+					"liquibase",
+					"mercurial"
+				]
+			},
+			{
+				"type": "h5",
+				"value": "Tasks:"
+			},
+			{
+				"type": "li",
+				"value": [
+					"Fixing bugs",
+					"implemented new features",
+					"modified the architecture by moving components between modules",
+					"implemented a showbook to showcase the new behaviour of modified components."
+				]
+			}
+		],
 		"organization": "Saba Softwares",
-		"image": "images/saba_logo.png",
-		"images": [],
-		"note": ""
+		"image": "images/saba_logo.png"
 	},
 	{
 		"label": "Student Mentor",
-		"description": "Worked as part of uOttawa's Engineering Mentoring Center.\nTasks:\nFacilitated Study groups\nDirected workshops\nHelped students during individual consultations.\nCourses facilitated:\nObject Oriented Programming with java.",
+		"description": [
+			{
+				"type": "p",
+				"value": "Worked as part of uOttawa's Engineering Mentoring Center."
+			},
+			{
+				"type": "h5",
+				"value": "Tasks:"
+			},
+			{
+				"type": "li",
+				"value": [
+					"Facilitated Study groups",
+					"Directed workshops",
+					"Helped students during individual consultations"
+				]
+			},
+			{
+				"type": "h5",
+				"value": "Courses facilitated:"
+			},
+			{
+				"type": "li",
+				"value": [
+					"Object Oriented Programming with java."
+				]
+			}
+		],
 		"organization": "uOttawa Engineering Mentoring Center",
-		"image": "images/mentoring_center_logo.jpg",
-		"images": [],
-		"note": ""
+		"image": "images/mentoring_center_logo.jpg"
 	},
 	{
 		"label": "uPass Distribution Clerk",
-		"description": "",
 		"organization": "uOttawa Card Services",
-		"image": "images/uottawa_logo.png",
-		"images": [],
-		"note": ""
+		"image": "images/uottawa_logo.png"
 	},
 	{
 		"label": "Note Taker",
-		"description": "",
 		"organization": "uOttawa",
-		"image": "images/uottawa_logo.png",
-		"images": [],
-		"note": ""
+		"image": "images/uottawa_logo.png"
 	},
 	{
 		"label": "Outfieler",
-		"description": "",
 		"organization": "Rona Entrepot",
-		"image": "images/rona_logo.jpg",
-		"images": [],
-		"note": ""
+		"image": "images/rona_logo.jpg"
 	}
 ]

@@ -2,7 +2,6 @@
 	{
 		"label": "violin",
 		"level": "beginner",
-		"description": null,
 		"additional": [
 			{
 				"key": "Objective",
@@ -14,7 +13,6 @@
 	{
 		"label": "tennis",
 		"level": "beginner",
-		"description": null,
 		"additional": [
 			{
 				"key": "Objective",
@@ -26,7 +24,6 @@
 	{
 		"label": "Cyber Security",
 		"level": "beginner",
-		"description": "Red Team",
 		"additional": [
 			{
 				"key": "Objective",
@@ -53,12 +50,11 @@
 			{
 				"key": "CTF",
 				"value": "Coding for Veterans CTF",
-				"notes": "Username: chadow2000",
-				"url": "https://tryhackme.com",
+				"url": "https://www.codingforveterans.com/",
 				"description": "CTF",
 				"start": "20/03/2021",
 				"finish": "20/03/2021",
-				"notes": "Team: BitsPlease"
+				"notes": "Username: chadow2000\nTeam: BitsPlease"
 			}
 		]
 	}

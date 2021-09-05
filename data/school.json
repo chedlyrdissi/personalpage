@@ -20,7 +20,6 @@
 	{
 		"name": "comp-lead",
 		"description": "leaderboard for sports events",
-		"url": "",
 		"urlSource": "github",
 		"started": "03/01/2021",
 		"finished": "12/04/2021",
@@ -40,7 +39,6 @@
 	{
 		"name": "Walk-in-clinic",
 		"description": "App to see clinic services in realtime",
-		"url": "",
 		"urlSource": "github",
 		"started": "15/10/2021",
 		"finished": "03/12/2019",
