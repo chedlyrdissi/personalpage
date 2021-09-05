@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import { CardColumns, Spinner } from 'react-bootstrap';
-import ExperienceCardComponent from './experienceCard';
-import './experience.css';
+import { Spinner, Row, Col } from 'react-bootstrap';
+import CustomCard from '../card/card';
+import GalleryComponent from '../gallery/gallery'
 
 
 class ExperienceComponent extends Component {
@@ -20,20 +20,48 @@ class ExperienceComponent extends Component {
       })
   }
 
-  renderExperienceCard = (experienceItem, i) => <ExperienceCardComponent key={i} {...experienceItem}/>
+  renderLoading = () =>
+    <Spinner animation="border" role="status">
+      <span className="sr-only">Loading...</span>
+    </Spinner>
+
+  renderExperienceData = (description, images, i) => <>
+    {description && description.map(({type, value}, j) => {
+      switch(type) {
+        case 'p':
+          return <p key={j}>{value}</p>
+        case 'h5':
+          return <h5 key={j}>{value}</h5>
+        case 'li':
+          return <ul key={j}>
+            {value.map((item, k) => <li key={k}>{item}</li>)}
+          </ul>
+        default:
+          return '';
+      }
+    })}
+    {images && <GalleryComponent className="img-container" images={images}/>}
+  </>
 
   render() {
-    if(!this.state.experience) {
-      return (
-        <Spinner animation="border" role="status">
-          <span className="sr-only">Loading...</span>
-        </Spinner>
-      )
+    const { experience } = this.state;
+    if(!experience) {
+      return this.renderLoading();
     }
     return (
-      <CardColumns style={{ widows: 2}}>
-        {this.state.experience.map(this.renderExperienceCard)}
-      </CardColumns>
+      <Row xs={1} md={2} lg={3} className="g-4">
+        {experience.map(({label, description, organization, image, images}, i) =>
+          <Col key={i+1} className="my-3">
+            <CustomCard
+              key={i+1}
+              image={image}
+              title={label}
+              titleNote={organization}
+              data={this.renderExperienceData(description, images, i+1)}
+            ></CustomCard>
+          </Col>
+        )}
+      </Row>
     )
   }
 }

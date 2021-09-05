@@ -1,7 +1,9 @@
 :root {
   --color-text: #B20000;
   --color-text-light: #ff1a1a;
-  --color-bg: black;
+  --color-text-secondary: black;
+  --color-bg-primary: white;
+  --color-bg-secondary: WhiteSmoke;
 
   --color-text-on-white: #540000;
 
@@ -12,7 +14,7 @@
 }
 
 body {
-  background: var(--color-bg) !important;
+  background: var(--color-bg-primary) !important;
 }
 
 body, a, input, input::placeholder {

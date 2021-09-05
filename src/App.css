@@ -8,6 +8,14 @@ button:focus, .form-control:focus {
 }
 
 img.icon {
-  background: var(--color-bg);
-  max-height: 6rem;
+  max-height: 3rem;
+}
+
+.copyright-footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: var(--color-bg-primary);
+  height: 30px;
+  padding-left: 15px;
 }

@@ -1,5 +1,25 @@
 [
 	{
+		"name": "shipment-tracker",
+		"description": "Simple Shipment Tracking app. Started for the purpose of learning spring boot.",
+		"url": "https://github.com/chedlyrdissi/shipment-tracker",
+		"urlSource": "github",
+		"started": "16/06/2021",
+		"status": "pending",
+		"technologies": [
+			"nodejs",
+			"angular",
+			"html",
+			"css",
+			"js",
+			"java",
+			"spring boot",
+			"docker",
+			"postgres",
+			"SQL"
+		]
+	},
+	{
 		"name": "personalpage",
 		"description": "personal page app",
 		"url": "https://github.com/chedlyrdissi/personalpage",

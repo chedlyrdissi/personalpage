@@ -19,9 +19,9 @@ function App() {
 
   return (
     <div className="h-100">
-      <Router basename="/">
+      <Router className="h-100" basename="/">
         <HeaderComponent></HeaderComponent>
-        <Container className="h-100">
+        <Container className="h-100 my-5">
           <Switch>
             <Route path="/" exact component={HomeComponent} />
             <Route path="/interests" component={InterestsComponent} />
@@ -35,6 +35,7 @@ function App() {
           </Switch>
         </Container>
 	    </Router>
+      <footer className="copyright-footer"><small>&copy; Copyright {(new Date()).getFullYear()}, Personal Page</small></footer> 
     </div>
   );
 }

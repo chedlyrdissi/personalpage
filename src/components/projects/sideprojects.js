@@ -5,8 +5,7 @@ class SideProjectsComponent extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			projects: null,
-			selectedProject: null
+			projects: null
 		};
 		fetch(`${process.env.PUBLIC_URL}/data/side.json`)
 			.then(data => data.json())

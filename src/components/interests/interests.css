@@ -1,19 +1,5 @@
-.card-header, .card-header a {
-	background-color: var(--color-text) !important;
-	color: var(--color-bg) !important;
-}
-
 .card-header a {
 	font-weight: 800;
-}
-
-.accordion-body, .accordion-body a {
-	background-color: var(--color-bg) !important;
-	color: var(--color-text) !important;
-}
-
-.card {
-	border: none;
 }
 
 table {

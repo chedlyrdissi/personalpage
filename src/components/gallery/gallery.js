@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { Carousel } from 'react-bootstrap';
+import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './gallery.css';
 
 
@@ -13,8 +15,8 @@ class GalleryComponent extends Component {
         alt="slide"
       />
       <Carousel.Caption>
-        <h3>{label}</h3>
-        <p>{note}</p>
+        { label && <h3>{label}</h3> }
+        { note && <p>{note}</p> }
       </Carousel.Caption>
     </Carousel.Item>
   
@@ -26,7 +28,11 @@ class GalleryComponent extends Component {
     }
 
     return (
-      <Carousel className={className}>
+      <Carousel
+        className={className}
+        nextIcon={<FontAwesomeIcon icon={faChevronRight} />}
+        prevIcon={<FontAwesomeIcon icon={faChevronLeft} />}
+      >
         {images.map(this.renderItem)}
     	</Carousel>
     )

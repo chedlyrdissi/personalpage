@@ -5,8 +5,7 @@ class ContractProjectsComponent extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			projects: null,
-			selectedProject: null
+			projects: null
 		};
 		fetch(`${process.env.PUBLIC_URL}/data/contracts.json`)
 			.then(data => data.json())

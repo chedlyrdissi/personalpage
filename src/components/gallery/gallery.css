@@ -4,5 +4,8 @@
 
 .carousel-caption {
 	color: var(--color-text);
-	text-shadow: 0 1px var(--color-bg), 0 -1px var(--color-bg), -1px 0 var(--color-bg), 1px 0 var(--color-bg);
+	text-shadow: 0 1px var(--color-bg-primary),
+		0 -1px var(--color-bg-primary),
+		-1px 0 var(--color-bg-primary),
+		1px 0 var(--color-bg-primary);
 }

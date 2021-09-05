@@ -1,13 +1,35 @@
+.header-container {
+  background: var(--color-bg-secondary);
+}
+
 .logo-grid {
 	display: grid;
 }
 
 .nav-bar {
 	align-items: center;
-	font-size: x-large !important;
+	font-size: large !important;
 	align-self: center;
+	justify-content: space-between;
+  width: 100%;
 }
 
 .dropdown-menu, .dropdown-item, .dropdown-item:active {
-  background: var(--color-bg) !important;
+  background: var(--color-bg-primary) !important;
+}
+
+.active-route {
+	border-bottom: 5px solid var(--color-text);
+	color: var(--color-text) !important;
+}
+
+.active-route-container {
+	width: 20%;
+}
+
+.active-route-project {
+	text-shadow: 0 3px 5px var(--color-text-light),
+		0 -3px 5px var(--color-text-light),
+		-3px 0 5px var(--color-text-light),
+		3px 0 5px var(--color-text-light);
 }
