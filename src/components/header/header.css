@@ -1,5 +1,6 @@
 .logo-grid {
 	display: grid;
+	margin-right: 0;
 }
 
 .nav-bar {
@@ -20,7 +21,7 @@
 }
 
 .active-route-container {
-	width: 20%;
+	width: 25%;
 }
 
 .active-route-project {

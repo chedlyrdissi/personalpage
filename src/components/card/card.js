@@ -15,7 +15,7 @@ class CardComponent extends Component {
     const { showDetails } = this.state;
 
     return (
-      <Card className="shadow-card">
+      <Card className={`shadow-card ${(image)?'image-card': ''}`}>
         {image && 
           <div className="position-relative img-container">
             <Card.Img variant="top" src={image}/>
